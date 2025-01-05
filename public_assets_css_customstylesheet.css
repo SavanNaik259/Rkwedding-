@@ -997,7 +997,7 @@ input:focus, textarea:focus {
         }
     }
 }
-@media (max-width:991px) {
+/*@media (max-width:991px) {
     .rkwedding-images-main {
         .slick-dots {
             bottom: 20px;
