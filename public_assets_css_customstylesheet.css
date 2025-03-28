@@ -28,7 +28,7 @@
     --font-soligant: "Soligant";
     --font-intervogue: "IntervogueSoft";
     --primary-color: #B49E64;
-    --secondary-color: #F0E9E0;
+  --secondary-color: #FFFFFF;
     --color-white: #FFFFFF;
     --border-gray: #E8E9EB;
     --text-dark: #000000;
@@ -78,6 +78,7 @@ h1, h2, h3, h4, h5, h6{
     margin-bottom: 0;
 }
  .nama-g{
+   text-align: center!important;
   font-size: 30px!important;
 }
 p {
@@ -712,10 +713,14 @@ input:focus, textarea:focus {
             /*background-color: black;*/
              background-color:#E8E9EB  ;
             /* box-shadow: 3px 3px #898989;*/
+            
              margin-top: 5px;
              transition: all 0.4s ease-in-out;
          }
-
+        }
+        #header-toggle:checked+.hamburger>div {
+          position: fixed;
+        }
         /* Hamburger Animation */
         #header-toggle:checked+.hamburger .top {
             transform: rotate(-45deg);
@@ -997,7 +1002,7 @@ input:focus, textarea:focus {
         }
     }
 }
-/*@media (max-width:991px) {
+@media (max-width:991px) {
     .rkwedding-images-main {
         .slick-dots {
             bottom: 20px;
@@ -1021,7 +1026,7 @@ input:focus, textarea:focus {
 
 /* PHOTOGRAPHY PORTFILIO */
 .rkwedding-portfolio{
-    background-color: var(--color-white);
+     background-color: var(--color-white);
     .portfolio-card-main{
         margin-bottom: 60px;
         .portfolio-cover{
@@ -1037,6 +1042,7 @@ input:focus, textarea:focus {
             }
         }
         .portfolio-details{
+          text-align: center!important;
             p:last-child{
                 font-size: 12px;
                 color:#5B5B5B;
@@ -1069,6 +1075,7 @@ input:focus, textarea:focus {
                 }
             }
             .portfolio-details{
+              text-align: center!important;
                 p:first-child {
                     font-size: 14px;
                 }
@@ -1087,6 +1094,7 @@ input:focus, textarea:focus {
                 }
             }
             .portfolio-details{
+              text-align: center!important;
                 p:first-child {
                     font-size: 14px;
                 }
@@ -1109,6 +1117,7 @@ input:focus, textarea:focus {
                 }
             }
             .portfolio-details{
+              text-align: center!important;
                 p:first-child {
                     font-size: 14px;
                 }
@@ -1489,7 +1498,7 @@ input:focus, textarea:focus {
         }
     }
 }
-.rkwedding_portf-destination{
+.rkwedding_portf-destnation{
     max-width: 1472px;
     margin: auto;
 }
