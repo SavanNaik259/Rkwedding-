@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RK Wedding Company - Packages & Pricing</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+ <link rel="stylesheet" href="bootstrap.min.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="public_assets_theme_css_bootstrap.min.css">
+<link rel="stylesheet" href="public_assets_css_customstylesheet.css">
+    <link rel="stylesheet" href="styles.css">
+    <!-- Bootstrap CSS 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <!-- Font Awesome
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Google Fonts 
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Nunito+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css">
+   <link rel="stylesheet" href="public_assets_css_customstylesheet.css">
+    <link rel="stylesheet" href="public_assets_theme_css_bootstrap.min.css">
+    <link rel="stylesheet" href="public_assets_css_intlTelInput.css">-->
+<style>
+ .a{
+
+ color: var(--text-dark)!important;
+ }
+    /*   Custom styling for narrower packages */
+   /* .pricing-card {
+        max-width: 240px!important;
+        margin-left: auto;
+        margin-right: auto;
+    }
+        
+        body {
+            font-family: 'Playfair Display', serif;
+            background-color: #ffffff;
+            color: #333;
+        }
+
+        .pricing-header {
+            text-align: center;
+            padding: 80px 0 30px;
+        }
+
+        .pricing-header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            font-weight: 300;
+        }
+
+        .pricing-subtitle {
+            font-size: 1.1rem;
+            color: #666;
+            max-width: 800px;
+            margin: 0 auto 40px;
+            line-height: 1.6;
+        }
+
+        .package-nav {
+            margin-bottom: 40px;
+        }
+*/
+        .nav-tabs {
+            border: none;
+            display: inline-flex;
+            margin: 0 auto;
+        }
+
+        .nav-tabs .nav-link {
+            border: none;
+            color: #999;
+            font-size: 1.1rem;
+            padding: 10px 20px;
+            position: relative;
+        }
+
+        .nav-tabs .nav-link.active {
+            background: transparent;
+            color: #333;
+            font-weight: 500;
+        }
+
+        .nav-tabs .nav-link.active:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 40px;
+            height: 2px;
+            background-color: #a58a5c;
+        }
+
+        .pricing-card {
+            background-color: #f9f9f9;
+            color: #333;
+            border-radius: 0;
+            margin-bottom: 30px;
+            height: 100%;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            border: none;
+        }
+
+        .card-header {
+            background-color: #1c1c1c;
+            border: none;
+            text-align: center;
+            padding: 25px 20px;
+            border-radius: 0;
+        }
+
+        .tier-name {
+            font-weight: 400;
+            font-size: 8.8rem;
+            margin-bottom: 10px;
+            color: white;
+        }
+
+        .price {
+            font-size: 2rem;
+            font-weight: 400;
+            color: #a58a5c;
+        }
+
+        .card-body {
+            background-color: #fff;
+            padding: 30px;
+        }
+
+        .card-body ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0 0 20px;
+        }
+
+        .card-body ul li {
+            padding: 8px 0;
+            border-bottom: 1px solid #eee;
+            color: #333;
+        }
+
+        .card-body ul li i {
+            color: #a58a5c;
+            margin-right: 10px;
+        }
+
+        .btn-book {
+            background-color: #a58a5c;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            width: 100%;
+            margin-top: 20px;
+            border-radius: 0;
+        }
+
+        .btn-book:hover {
+            background-color: #1c1c1c;
+            color: white;
+        }
+
+        .featured-tag {
+            position: absolute;
+            top: 0;
+            right: 0;
+            background-color: #333;
+            color: white;
+            padding: 5px 15px;
+            font-size: 0.8rem;
+            font-weight: 500;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+                <header class="rkwedding-header photography-details-header mx-75">
+    <div class="row align-items-center">
+        <div class="col-4 pe-0">
+            <div class="header-menu-list">
+                <div class="d-none d-lg-block">
+                    <ul class="flex-center justify-content-start flex-wrap">
+                        <li><a class="a"href="/">Home</a></li>
+                          <li><a class="a"href="about-us.html">About Us</a></li>  
+                        <li><a class="a"href="pre-weddings.html">Pre-Weddings</a></li>
+                        <li><a class="a"href="weddings.html">Weddings</a></li>
+                        <li><a class="a"href="destination-weddings.html">Destination weddings</a></li>
+<li><a class="a"href="pricing.html">Pricing</a></li>
+                        <li><a class="a"href="booking.html">Book Now/Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="d-block d-lg-none">
+                <input id="header-toggle" type="checkbox" aria-hidden="true" hidden onchange="toggleCheckbox(this)"/>
+                <label class="hamburger" for="header-toggle" aria-hidden="true">
+                    <div class="top"></div>
+                    <div class="meat"></div>
+                    <div class="bottom"></div>
+                </label>
+                <div class="header-rspnv">
+    <ul class="uniquenav-navbar-menu" id="uniquenav-navbar-menu">
+         <div class=" nama-header">
+                      <a href="/"><img src="images/rklogo/75694b4e-63d8-4fa4-acc2-b5b72bb44dfc_20241119_234236_0000.png"width="100"class="bottom-nama-logo"/></a>
+            </div>
+        <li><a href="/">Home</a></li>
+                <li><a href="about-us.html">About</a></li>
+                        <li><a href="pre-weddings.html">Pre-Weddings</a></li>
+                        <li><a href="weddings.html">Weddings</a></li>
+                        <li><a href="destination-weddings.html">Destination weddings</a></li>
+<li><a class="a"href="pricing.html">Pricing</a></li>
+                        <li><a class="a"href="booking.html">Book Now/Contact Us</a></li>
+                    <li><a href="https://www.instagram.com/rk_wedding_company?igsh=MTB3c21ocWd3Z2R4OA==" target="_blank">
+    <i class="fab fa-instagram insta-icon" aria-hidden="true"></i>
+  </a></li>
+   <div class="rkwedding-btn-main">
+    <a href="contact-us.html" class="rkwedding-btn">
+ Get In Touch
+   </a>
+ </div>
+    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-4">
+        <div class=" nama-header">
+                      <a href="/"><img src="images/rklogo/75694b4e-63d8-4fa4-acc2-b5b72bb44dfc_20241119_234236_0000.png"width="100"class="bottom-nama-logo"/></a>
+            </div>
+        </div>
+        <div class="col-4 d-none d-lg-block">
+            <div class="header-connect-list">
+                <ul class="flex-center justify-content-end">
+                    <li><a href="https://www.instagram.com/rk_wedding_company?igsh=MTB3c21ocWd3Z2R4OA==" target="_blank">
+    <i class="fab fa-instagram insta-icon" aria-hidden="true"></i>
+  </a></li>
+                    <li>
+                        <div class="rkwedding-btn-main">
+                            <a href="contact-us.html" class="rkwedding-btn">
+                                Get In Touch
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>
+
+    <!-- Main Content -->
+    <div class="pricing-header">
+        <div class="container">
+            <h1>Our Photography Packages</h1>
+            <p class="pricing-subtitle">Presenting a carefully curated collection of wedding packages, capturing the genuine bond of two souls in the most authentic and heartfelt way.</p>
+
+            <!-- Package Navigation -->
+            <div class="package-nav mb-4">
+                <ul class="nav nav-tabs custom-tabs d-flex justify-content-center">
+                    <li class="nav-item flex-fill text-center">
+                        <a class="nav-link active" href="#" id="wedding-tab" data-package-type="wedding">Wedding</a>
+                    </li>
+                    <li class="nav-item flex-fill text-center">
+                        <a class="nav-link" href="#" id="pre_wedding-tab" data-package-type="pre_wedding">Pre-Wedding</a>
+                    </li>
+                    <li class="nav-item flex-fill text-center">
+                        <a class="nav-link" href="#" id="ring_ceremony-tab" data-package-type="ring_ceremony">Ring Ceremony</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Package Container -->
+    <div class="package-category">
+        <div class="container" style="max-width: 900px;">
+            <h2 class="category-title" id="package-category-title">Wedding Photography Packages</h2>
+
+            <!-- Wedding Packages -->
+            <div id="wedding-packages" class="package-section active">
+                <div class="row">
+                    <!-- Basic Package -->
+                    <div class="col-lg-4 mb-4">
+                        <div class="pricing-card">
+                            <div class="card-header">
+                                <h3 class="tier-name">Basic</h3>
+                                <div class="price">₹69,999</div>
+                            </div>
+                            <div class="card-body">
+                                <ul>
+                                    <li><i class="fas fa-check"></i> 8 hours of photography coverage</li>
+                                    <li><i class="fas fa-check"></i> 1 photographer</li>
+                                    <li><i class="fas fa-check"></i> Online gallery with all edited images</li>
+                                    <li><i class="fas fa-check"></i> 100 high-resolution digital images</li>
+                                </ul>
+                                <a href="booking.html?package_type=wedding&tier=basic" class="btn btn-book">BOOK NOW</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Standard Package -->
+                    <div class="col-lg-4 mb-4">
+                        <div class="pricing-card featured">
+                            <div class="featured-tag">POPULAR</div>
+                            <div class="card-header">
+                                <h3 class="tier-name">Standard</h3>
+                                <div class="price">₹99,999</div>
+                            </div>
+                            <div class="card-body">
+                                <ul>
+                                    <li><i class="fas fa-check"></i> 10 hours of photography coverage</li>
+                                    <li><i class="fas fa-check"></i> 2 photographers</li>
+                                    <li><i class="fas fa-check"></i> Online gallery with all edited images</li>
+                                    <li><i class="fas fa-check"></i> 300 high-resolution digital images</li>
+                                    <li><i class="fas fa-check"></i> Engagement photo session</li>
+                                    <li><i class="fas fa-check"></i> Wedding album (20 pages)</li>
+                                </ul>
+                                <a href="booking.html?package_type=wedding&tier=standard" class="btn btn-book">BOOK NOW</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Premium Package -->
+                    <div class="col-lg-4 mb-4">
+                        <div class="pricing-card">
+                            <div class="card-header">
+                                <h3 class="tier-name">Premium</h3>
+                                <div class="price">₹1,49,999</div>
+                            </div>
+                            <div class="card-body">
+                                <ul>
+                                    <li><i class="fas fa-check"></i> Full day photography coverage (up to 12 hours)</li>
+                                    <li><i class="fas fa-check"></i> 2 photographers</li>
+                                    <li><i class="fas fa-check"></i> Online gallery with all edited images</li>
+                                    <li><i class="fas fa-check"></i> All high-resolution digital images</li>
+                                    <li><i class="fas fa-check"></i> Engagement photo session</li>
+                                    <li><i class="fas fa-check"></i> Bridal photoshoot</li>
+                                    <li><i class="fas fa-check"></i> Deluxe wedding album (30 pages)</li>
+                                    <li><i class="fas fa-check"></i> Two parent albums</li>
+                                    <li><i class="fas fa-check"></i> Wedding day highlight slideshow</li>
+                                </ul>
+                                <a href="booking.html?package_type=wedding&tier=premium" class="btn btn-book">BOOK NOW</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pre-Wedding Packages -->
+            <div id="pre_wedding-packages" class="package-section d-none">
+                <div class="row">
+                    <!-- Basic Package -->
+                    <div class="col-lg-4 mb-4">
+                        <div class="pricing-card">
+                            <div class="card-header">
+                                <h3 class="tier-name">Basic</h3>
+                                <div class="price">₹59,999</div>
+                            </div>
+                            <div class="card-body">
+                                <ul>
+                                    <li><i class="fas fa-check"></i> 6 hours of pre-wedding photography</li>
+                                    <li><i class="fas fa-check"></i> 1 professional photographer</li>
+                                    <li><i class="fas fa-check"></i> Scenic outdoor locations</li>
+                                    <li><i class="fas fa-check"></i> 80 edited digital images</li>
+                                    <li><i class="fas fa-check"></i> Online gallery with downloadable photos</li>
+                                </ul>
+                                <a href="booking.html?package_type=pre_wedding&tier=basic" class="btn btn-book">BOOK NOW</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Standard Package -->
+                    <div class="col-lg-4 mb-4">
+                        <div class="pricing-card featured">
+                            <div class="featured-tag">POPULAR</div>
+                            <div class="card-header">
+                                <h3 class="tier-name">Standard</h3>
+                                <div class="price">₹89,999</div>
+                            </div>
+                            <div class="card-body">
+                                <ul>
+                                    <li><i class="fas fa-check"></i> 8 hours of pre-wedding photography</li>
+                                    <li><i class="fas fa-check"></i> 2 professional photographers</li>
+                                    <li><i class="fas fa-check"></i> Multiple outfit changes (up to 3)</li>
+                                    <li><i class="fas fa-check"></i> Multiple premium locations</li>
+                                    <li><i class="fas fa-check"></i> 150 edited digital images</li>
+                                    <li><i class="fas fa-check"></i> Custom photo album (20 pages)</li>
+                                    <li><i class="fas fa-check"></i> Online gallery with downloadable photos</li>
+                                </ul>
+                                <a href="booking.html?package_type=pre_wedding&tier=standard" class="btn btn-book">BOOK NOW</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Premium Package -->
+                    <div class="col-lg-4 mb-4">
+                        <div class="pricing-card">
+                            <div class="card-header">
+                                <h3 class="tier-name">Premium</h3>
+                                <div class="price">₹1,29,999</div>
+                            </div>
+                            <div class="card-body">
+                                <ul>
+                                    <li><i class="fas fa-check"></i> 2-day pre-wedding photoshoot (16 hours)</li>
+                                    <li><i class="fas fa-check"></i> 2 professional photographers + 1 assistant</li>
+                                    <li><i class="fas fa-check"></i> Unlimited outfit changes</li>
+                                    <li><i class="fas fa-check"></i> Drone photography & cinematography</li>
+                                    <li><i class="fas fa-check"></i> Premium destination locations</li>
+                                    <li><i class="fas fa-check"></i> 300+ edited digital images</li>
+                                    <li><i class="fas fa-check"></i> Luxury photo album (30 pages)</li>
+                                    <li><i class="fas fa-check"></i> 5-minute cinematic highlight film</li>
+                                    <li><i class="fas fa-check"></i> Private online gallery</li>
+                                </ul>
+                                <a href="booking.html?package_type=pre_wedding&tier=premium" class="btn btn-book">BOOK NOW</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Ring Ceremony Packages -->
+            <div id="ring_ceremony-packages" class="package-section d-none">
+                <div class="row">
+                    <!-- Basic Package -->
+                    <div class="col-lg-4 mb-4">
+                        <div class="pricing-card">
+                            <div class="card-header">
+                                <h3 class="tier-name">Basic</h3>
+                                <div class="price">₹49,999</div>
+                            </div>
+                            <div class="card-body">
+                                <ul>
+                                    <li><i class="fas fa-check"></i> 4 hours of ring ceremony coverage</li>
+                                    <li><i class="fas fa-check"></i> 1 dedicated photographer</li>
+                                    <li><i class="fas fa-check"></i> In-venue photography</li>
+                                    <li><i class="fas fa-check"></i> 75 edited digital images</li>
+                                    <li><i class="fas fa-check"></i> Private online gallery</li>
+                                </ul>
+                                <a href="booking.html?package_type=ring_ceremony&tier=basic" class="btn btn-book">BOOK NOW</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Standard Package -->
+                    <div class="col-lg-4 mb-4">
+                        <div class="pricing-card featured">
+                            <div class="featured-tag">POPULAR</div>
+                            <div class="card-header">
+                                <h3 class="tier-name">Standard</h3>
+                                <div class="price">₹79,999</div>
+                            </div>
+                            <div class="card-body">
+                                <ul>
+                                    <li><i class="fas fa-check"></i> 6 hours of ring ceremony coverage</li>
+                                    <li><i class="fas fa-check"></i> 2 coordinated photographers</li>
+                                    <li><i class="fas fa-check"></i> Family group photos</li>
+                                    <li><i class="fas fa-check"></i> Couple's portraiture session</li>
+                                    <li><i class="fas fa-check"></i> 150 edited digital images</li>
+                                    <li><i class="fas fa-check"></i> Ring ceremony photo album (20 pages)</li>
+                                    <li><i class="fas fa-check"></i> Private online gallery</li>
+                                </ul>
+                                <a href="booking.html?package_type=ring_ceremony&tier=standard" class="btn btn-book">BOOK NOW</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Premium Package -->
+                    <div class="col-lg-4 mb-4">
+                        <div class="pricing-card">
+                            <div class="card-header">
+                                <h3 class="tier-name">Premium</h3>
+                                <div class="price">₹1,19,999</div>
+                            </div>
+                            <div class="card-body">
+                                <ul>
+                                    <li><i class="fas fa-check"></i> Full day ring ceremony coverage (10 hours)</li>
+                                    <li><i class="fas fa-check"></i> 2 photographers + 1 cinematographer</li>
+                                    <li><i class="fas fa-check"></i> Pre-ceremony preparation photos</li>
+                                    <li><i class="fas fa-check"></i> Venue and décor detail shots</li>
+                                    <li><i class="fas fa-check"></i> Family formal portraits</li>
+                                    <li><i class="fas fa-check"></i> 250+ edited digital images</li>
+                                    <li><i class="fas fa-check"></i> Luxury ring ceremony album (30 pages)</li>
+                                    <li><i class="fas fa-check"></i> 3-5 minute highlight film</li>
+                                    <li><i class="fas fa-check"></i> Two parent albums</li>
+                                    <li><i class="fas fa-check"></i> Private online gallery with downloadable content</li>
+                                </ul>
+                                <a href="booking.html?package_type=ring_ceremony&tier=premium" class="btn btn-book">BOOK NOW</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+        <footer class="rkwedding-footer px-75">
+                <div class="pt-100 pb-100">
+                    <div class="row align-items-center">
+                        <div class="col-6 col-sm-3 order-2 order-sm-1">
+                            <div class="footer-policy text-center">
+                                <ul>
+                                    <li><a href="contact-us.html">Contact Us</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+        <div class="col-12 col-md-4 nama-header">
+                      <a href="/"><img src="images/rklogo/75694b4e-63d8-4fa4-acc2-b5b72bb44dfc_20241119_234236_0000.png"width="100"class="bottom-nama-logo"/></a>
+            </div>
+                        <div class="col-6 col-sm-3 order-3 order-sm-3">
+                            <div class="footer-contact footer-policy text-center">
+                                <ul>
+                    <li><a href="https://www.instagram.com/rk_wedding_company?igsh=MTB3c21ocWd3Z2R4OA==" target="_blank">
+    <i class="fab fa-instagram insta-icon" aria-hidden="true"></i>
+  </a></li>
+                                    <li><a href="tel:+9199012 33560">+91 99012 33560</a></li>
+                                    <li><a href="mailto:rkphotography2k22@gmail.com">rkphotography2k22@gmail.com</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="copyright-sect">
+                    <ul class="flex-center justify-content-between">
+                        <li>COPYRIGHTS © 2024, Rk Wedding Company, ALL RIGHTS RESERVED.</li>
+                        <li>Designed By <a href="https://savannaik.netlify.app" target="_blank">Savan Naik</a></li>
+                    </ul>
+                </div>
+            </footer>
+     
+
+    <!-- Bootstrap JS Bundle and custom scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // Tab navigation handling
+            const packageTabs = document.querySelectorAll('[data-package-type]');
+            const categoryTitle = document.getElementById('package-category-title');
+
+            packageTabs.forEach(tab => {
+                tab.addEventListener('click', function(e) {
+                    e.preventDefault();
+
+                    // Remove active class from all tabs
+                    packageTabs.forEach(t => t.classList.remove('active'));
+
+                    // Add active class to clicked tab
+                    this.classList.add('active');
+
+                    const packageType = this.getAttribute('data-package-type');
+
+                    // Hide all package sections
+                    document.querySelectorAll('.package-section').forEach(section => {
+                        section.classList.add('d-none');
+                    });
+
+                    // Show the selected package section
+                    const targetSection = document.getElementById(`${packageType}-packages`);
+                    if (targetSection) {
+                        targetSection.classList.remove('d-none');
+                        targetSection.classList.add('active');
+                    }
+
+                    // Update category title
+                    if (categoryTitle) {
+                        const titlePrefix = packageType.replace('_', ' ');
+                        categoryTitle.textContent = titlePrefix.charAt(0).toUpperCase() + titlePrefix.slice(1) + ' Photography Packages';
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

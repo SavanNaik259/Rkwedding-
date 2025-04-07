@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RK Wedding Company - Book Your Package</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+ <link rel="stylesheet" href="bootstrap.min.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="public_assets_theme_css_bootstrap.min.css">
+<link rel="stylesheet" href="public_assets_css_customstylesheet.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+                <header class="rkwedding-header photography-details-header mx-75">
+    <div class="row align-items-center">
+        <div class="col-4 pe-0">
+            <div class="header-menu-list">
+                <div class="d-none d-lg-block">
+                    <ul class="flex-center justify-content-start flex-wrap">
+                        <li><a class="a"href="/">Home</a></li>
+                          <li><a class="a"href="about-us.html">About Us</a></li>  
+                        <li><a class="a"href="pre-weddings.html">Pre-Weddings</a></li>
+                        <li><a class="a"href="weddings.html">Weddings</a></li>
+                        <li><a class="a"href="destination-weddings.html">Destination weddings</a></li>
+                          <li><a class="a"href="pricing.html">Pricing</a></li>
+                        <li><a class="a"href="booking.html">Book Now/Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="d-block d-lg-none">
+                <input id="header-toggle" type="checkbox" aria-hidden="true" hidden onchange="toggleCheckbox(this)"/>
+                <label class="hamburger" for="header-toggle" aria-hidden="true">
+                    <div class="top"></div>
+                    <div class="meat"></div>
+                    <div class="bottom"></div>
+                </label>
+                <div class="header-rspnv">
+    <ul class="uniquenav-navbar-menu" id="uniquenav-navbar-menu">
+         <div class=" nama-header">
+                      <a href="/"><img src="images/rklogo/75694b4e-63d8-4fa4-acc2-b5b72bb44dfc_20241119_234236_0000.png"width="100"class="bottom-nama-logo"/></a>
+            </div>
+        <li><a href="/">Home</a></li>
+                <li><a href="about-us.html">About</a></li>
+                        <li><a href="pre-weddings.html">Pre-Weddings</a></li>
+                        <li><a href="weddings.html">Weddings</a></li>
+                        <li><a href="destination-weddings.html">Destination weddings</a></li>
+<li><a class="a"href="pricing.html">Pricing</a></li>
+                        <li><a class="a"href="booking.html">Book Now/Contact Us</a></li>
+                    <li><a href="https://www.instagram.com/rk_wedding_company?igsh=MTB3c21ocWd3Z2R4OA==" target="_blank">
+    <i class="fab fa-instagram insta-icon" aria-hidden="true"></i>
+  </a></li>
+   <div class="rkwedding-btn-main">
+    <a href="contact-us.html" class="rkwedding-btn">
+ Get In Touch
+   </a>
+ </div>
+    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-4">
+        <div class=" nama-header">
+                      <a href="/"><img src="images/rklogo/75694b4e-63d8-4fa4-acc2-b5b72bb44dfc_20241119_234236_0000.png"width="100"class="bottom-nama-logo"/></a>
+            </div>
+        </div>
+        <div class="col-4 d-none d-lg-block">
+            <div class="header-connect-list">
+                <ul class="flex-center justify-content-end">
+                    <li><a href="https://www.instagram.com/rk_wedding_company?igsh=MTB3c21ocWd3Z2R4OA==" target="_blank">
+    <i class="fab fa-instagram insta-icon" aria-hidden="true"></i>
+  </a></li>
+                    <li>
+                        <div class="rkwedding-btn-main">
+                            <a href="contact-us.html" class="rkwedding-btn">
+                                Get In Touch
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>
+    <!-- Main Content -->
+    <div class="booking-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                                                    <div class="top-booking-color"></div>
+                    <div class="booking-form">
+                        <h2>Book Your Photography Package</h2>
+
+                        <form id="bookingForm" class="needs-validation" novalidate onsubmit="return handleFormSubmit(event)">
+                            <div class="row mb-4">
+                                <div class="col-md-6 mb-3">
+                                    <label for="package_type" class="form-label">Package Type *</label>
+                                    <select class="form-select" id="package_type" name="package_type" required>
+                                        <option value="wedding">Wedding</option>
+                                        <option value="pre_wedding">Pre-Wedding</option>
+                                        <option value="ring_ceremony">Ring Ceremony</option>
+                                    </select>
+                                    <div class="invalid-feedback">
+                                        Please select a package type.
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6 mb-3">
+                                    <label for="tier" class="form-label">Package Tier *</label>
+                                    <select class="form-select" id="tier" name="tier" required>
+                                        <option value="basic">Basic</option>
+                                        <option value="standard" selected>Standard</option>
+                                        <option value="premium">Premium</option>
+                                    </select>
+                                    <div class="invalid-feedback">
+                                        Please select a package tier.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label for="name" class="form-label">Full Name *</label>
+                                    <input type="text" class="form-control" id="name" name="name" required>
+                                    <div class="invalid-feedback">
+                                        Please provide your full name.
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6 mb-3">
+                                    <label for="email" class="form-label">Email Address *</label>
+                                    <input type="email" class="form-control" id="email" name="email" required>
+                                    <div class="invalid-feedback">
+                                        Please provide a valid email address.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label for="phone" class="form-label">Phone Number (with country code) *</label>
+                                    <div class="input-group">
+                                        <select class="form-select" id="country_code" name="country_code" style="max-width: 80px;max-height:38px;">
+                                            <option value="+1">+1 (USA)</option>
+                                            <option value="+44">+44 (UK)</option>
+                                            <option value="+61">+61 (Australia)</option>
+                                            <option value="+91" selected>+91 (India)</option>
+                                            <option value="+971">+971 (UAE)</option>
+                                            <option value="+65">+65 (Singapore)</option>
+                                            <option value="+81">+81 (Japan)</option>
+                                            <option value="+49">+49 (Germany)</option>
+                                            <option value="+33">+33 (France)</option>
+                                            <option value="+86">+86 (China)</option>
+                                            <option value="+7">+7 (Russia)</option>
+                                            <option value="+27">+27 (South Africa)</option>
+                                            <option value="+60">+60 (Malaysia)</option>
+                                            <option value="+66">+66 (Thailand)</option>
+                                        </select>
+                                        <input type="tel" class="form-control" id="phone" name="phone" placeholder="9876543210" required>
+                                    </div>
+                                    <div class="form-text">Select your country code and enter your number without leading zeros</div>
+                                    <div class="invalid-feedback">
+                                        Please provide your phone number.
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6 mb-3">
+                                    <label for="event_date" class="form-label">Event Date *</label>
+                                    <input type="date" class="form-control" id="event_date" name="event_date" required>
+                                    <div class="invalid-feedback">
+                                        Please select your event date.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="venue" class="form-label">Event Venue *</label>
+                                <input type="text" class="form-control" id="venue" name="venue" required>
+                                <div class="invalid-feedback">
+                                    Please provide the event venue.
+                                </div>
+                            </div>
+
+                            <div class="mb-4">
+                                <label for="message" class="form-label">Additional Information</label>
+                                <textarea class="form-control" id="message" name="message" rows="4" placeholder="Please share any specific requirements or questions..."></textarea>
+                            </div>
+
+                            <div class="mb-4">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="terms" required>
+                                    <label class="form-check-label" for="terms">
+                                        I agree to the <a href="#" data-bs-toggle="modal" data-bs-target="#termsModal">terms and conditions</a> *
+                                    </label>
+                                    <div class="invalid-feedback">
+                                        You must agree to the terms and conditions.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Hidden field for package price -->
+                            <input type="hidden" id="package-price-input" name="package_price" value="">
+                            
+                            <!-- Form Error Message Display -->
+                            <div id="form-error" class="alert alert-danger mt-3 d-none"></div>
+
+                            <button type="submit" class="btn btn-book btn-lg w-100">Complete Booking</button>
+                        </form>
+                    </div>
+                </div>
+                
+                <!-- Summary Column -->
+                <div class="col-lg-4">
+                                                      <div class="top-booking-color"></div>                   
+                    <div class="booking-summary">
+
+                        <h3>Your Selection</h3>
+                        <div class="mb-3">
+                            <h5>Package</h5>
+                            <div class="fs-5 fw-bold mb-3" id="package-title">Wedding Package</div>
+                        </div>
+                        
+                        <div class="mb-4">
+                            <h5>Price</h5>
+                            <div class="fs-4 text-primary fw-bold" id="total-price-display">₹99,999</div>
+                        </div>
+                        
+                        <div class="mb-4">
+                            <h5>What's Included</h5>
+                            <ul class="package-features" id="package-features-list">
+                                <li><i class="fas fa-check me-2"></i> Loading package features...</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="mt-4">
+                            <div class="alert alert-warning small mb-2">
+                                <i class="fas fa-info-circle me-2"></i> 50% advance payment required to secure booking
+                            </div>
+                            <div class="alert alert-warning small">
+                                <i class="fas fa-info-circle me-2"></i> Our team will contact you within 24 hours to confirm your booking
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Terms Modal -->
+    <div class="modal fade" id="termsModal" tabindex="-1" aria-labelledby="termsModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="termsModalLabel">Terms and Conditions</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h6>Booking & Payment</h6>
+                    <p>A 50% non-refundable deposit is required to secure your booking date. The remaining balance is due 14 days before the event date. Payments can be made via bank transfer, credit card, or other agreed methods.</p>
+                    
+                    <h6>Cancellation Policy</h6>
+                    <p>If you cancel more than 60 days before the event, you forfeit the deposit. Cancellations within 60 days of the event date require full payment.</p>
+                    
+                    <h6>Rescheduling</h6>
+                    <p>Rescheduling requests must be made at least 30 days before the original event date and are subject to our availability.</p>
+                    
+                    <h6>Image Delivery</h6>
+                    <p>Final edited images will be delivered within 6-8 weeks after your event. Rush delivery may be available for an additional fee.</p>
+                    
+                    <h6>Copyright & Usage</h6>
+                    <p>RK Wedding Company retains copyright of all images and videos. We reserve the right to use images for portfolio, social media, and marketing purposes unless otherwise agreed in writing.</p>
+                    
+                    <h6>Force Majeure</h6>
+                    <p>We are not liable for failure to perform due to circumstances beyond our control (natural disasters, illness, equipment failure, etc.). In such cases, we will make reasonable efforts to find a replacement photographer of similar style and experience.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+        <footer class="rkwedding-footer px-75">
+                <div class="pt-100 pb-100">
+                    <div class="row align-items-center">
+                        <div class="col-6 col-sm-3 order-2 order-sm-1">
+                            <div class="footer-policy text-center">
+                                <ul>
+                                    <li><a href="contact-us.html">Contact Us</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+        <div class="col-12 col-md-4 nama-header">
+                      <a href="/"><img src="images/rklogo/75694b4e-63d8-4fa4-acc2-b5b72bb44dfc_20241119_234236_0000.png"width="100"class="bottom-nama-logo"/></a>
+            </div>
+                        <div class="col-6 col-sm-3 order-3 order-sm-3">
+                            <div class="footer-contact footer-policy text-center">
+                                <ul>
+                    <li><a href="https://www.instagram.com/rk_wedding_company?igsh=MTB3c21ocWd3Z2R4OA==" target="_blank">
+    <i class="fab fa-instagram insta-icon" aria-hidden="true"></i>
+  </a></li>
+                                    <li><a href="tel:+9199012 33560">+91 99012 33560</a></li>
+                                    <li><a href="mailto:rkphotography2k22@gmail.com">rkphotography2k22@gmail.com</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="copyright-sect">
+                    <ul class="flex-center justify-content-between">
+                        <li>COPYRIGHTS © 2024, Rk Wedding Company, ALL RIGHTS RESERVED.</li>
+                        <li>Designed By <a href="https://savannaik.netlify.app" target="_blank">Savan Naik</a></li>
+                    </ul>
+                </div>
+            </footer>
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- EmailJS -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            // Load the EmailJS SDK with your public key
+            emailjs.init("omzmKt1hNjC65t4R3");
+        })();
+    </script>
+    
+    <!-- Custom JS -->
+    <script src="main.js"></script>
+    
+    <script>
+        // Make handleFormSubmit function global so it can be accessed by the onsubmit attribute
+        window.handleFormSubmit = function(event) {
+            event.preventDefault();
+            
+            const form = event.target;
+            
+            // Validate the form
+            if (!form.checkValidity()) {
+                event.stopPropagation();
+                form.classList.add('was-validated');
+                return false;
+            }
+            
+            // Create template parameters for EmailJS
+            const packageType = document.getElementById('package_type').value;
+            const tier = document.getElementById('tier').value;
+            
+            // Format package type and tier for display
+            let packageDisplayName = packageType === 'pre_wedding' ? 'Pre-Wedding' : 
+                                  packageType === 'ring_ceremony' ? 'Ring Ceremony' : 'Wedding';
+            const tierDisplayName = tier.charAt(0).toUpperCase() + tier.slice(1);
+            
+            // Remove any existing formatted package inputs to avoid duplication
+            const existingPackageInputs = form.querySelectorAll('input[name="package_type"]');
+            existingPackageInputs.forEach(input => {
+                if (input.id !== 'package_type') {
+                    form.removeChild(input);
+                }
+            });
+            
+            const existingTierInputs = form.querySelectorAll('input[name="tier"]');
+            existingTierInputs.forEach(input => {
+                if (input.id !== 'tier') {
+                    form.removeChild(input);
+                }
+            });
+            
+            // Create clean package display input
+            const packageDisplayInput = document.createElement('input');
+            packageDisplayInput.type = 'hidden';
+            packageDisplayInput.name = 'package_display';
+            packageDisplayInput.value = tierDisplayName + ' ' + packageDisplayName + ' Package';
+            form.appendChild(packageDisplayInput);
+            
+            const packageKey = `${packageType}_${tier}`;
+            
+            // Get package features from packageFeatures object (defined in main.js)
+            let featuresHtml = '';
+            let featuresListHtml = '';
+            if (window.packageFeatures && window.packageFeatures[packageKey]) {
+                // Create styled HTML for EmailJS template (dark theme with gold accents)
+                featuresHtml = '<div style="background-color: #1a1a1a; color: #ffffff; padding: 20px; border-radius: 8px; margin: 15px 0;">';
+                featuresHtml += '<h3 style="color: #a58a5c; margin-bottom: 15px;">What\'s Included:</h3>';
+                featuresHtml += '<ul style="padding-left: 20px; list-style-type: none;">';
+                window.packageFeatures[packageKey].forEach(feature => {
+                    featuresHtml += `<li style="margin-bottom: 10px;">• ${feature}</li>`;
+                });
+                featuresHtml += '</ul></div>';
+                
+                // Also create a simple text list for plain text emails
+                featuresListHtml = 'What\'s Included:\n';
+                window.packageFeatures[packageKey].forEach(feature => {
+                    featuresListHtml += `• ${feature}\n`;
+                });
+            }
+            
+            // Generate booking reference (format: RK + date + random string)
+            const now = new Date();
+            const dateStr = now.getFullYear().toString().substr(-2) + 
+                           (now.getMonth() + 1).toString().padStart(2, '0') + 
+                           now.getDate().toString().padStart(2, '0');
+            const randomChars = Math.random().toString(36).substring(2, 7).toUpperCase();
+            const bookingReference = `RK${dateStr}-${randomChars}`;
+            
+            // Create a hidden input for booking reference
+            let bookingRefInput = document.getElementById('booking-reference-input');
+            if (!bookingRefInput) {
+                bookingRefInput = document.createElement('input');
+                bookingRefInput.type = 'hidden';
+                bookingRefInput.name = 'booking_reference';
+                bookingRefInput.id = 'booking-reference-input';
+                form.appendChild(bookingRefInput);
+            }
+            bookingRefInput.value = bookingReference;
+            
+            // Create a hidden input for package features to be sent in the email
+            let featuresInput = document.getElementById('package-features-input');
+            if (!featuresInput) {
+                featuresInput = document.createElement('input');
+                featuresInput.type = 'hidden';
+                featuresInput.name = 'package_features';
+                featuresInput.id = 'package-features-input';
+                form.appendChild(featuresInput);
+            }
+            featuresInput.value = featuresHtml;
+            
+            // Full phone number with country code (with space for better readability)
+            const countryCode = document.getElementById('country_code').value;
+            const phoneNumber = document.getElementById('phone').value;
+            const fullPhone = countryCode + ' ' + phoneNumber;
+            
+            // Clear any previously created phone inputs to avoid duplication
+            const existingPhoneInputs = form.querySelectorAll('input[name="phone"]');
+            existingPhoneInputs.forEach(input => {
+                if (input.id !== 'phone') {
+                    form.removeChild(input);
+                }
+            });
+            
+            // Override the value of the existing phone field
+            const phoneInput = document.getElementById('phone');
+            phoneInput.value = fullPhone;
+            
+            // Get the date in readable format
+            const eventDate = document.getElementById('event_date').value;
+            const formattedEventDate = new Date(eventDate).toLocaleDateString('en-US', {
+                weekday: 'long',
+                year: 'numeric',
+                month: 'long',
+                day: 'numeric'
+            });
+            
+            // Get the booking date (today's date)
+            const bookingDate = new Date();
+            const formattedBookingDate = bookingDate.toLocaleDateString('en-US', {
+                weekday: 'long',
+                year: 'numeric',
+                month: 'long',
+                day: 'numeric'
+            });
+            
+            // Create hidden fields for dates
+            // Add booking date hidden field
+            let bookingDateInput = document.getElementById('booking-date-input');
+            if (!bookingDateInput) {
+                bookingDateInput = document.createElement('input');
+                bookingDateInput.type = 'hidden';
+                bookingDateInput.name = 'booking_date';
+                bookingDateInput.id = 'booking-date-input';
+                form.appendChild(bookingDateInput);
+            }
+            bookingDateInput.value = formattedBookingDate;
+            
+            // Add event date hidden field
+            let eventDateFormattedInput = document.getElementById('event-date-formatted-input');
+            if (!eventDateFormattedInput) {
+                eventDateFormattedInput = document.createElement('input');
+                eventDateFormattedInput.type = 'hidden';
+                eventDateFormattedInput.name = 'event_date_formatted';
+                eventDateFormattedInput.id = 'event-date-formatted-input';
+                form.appendChild(eventDateFormattedInput);
+            }
+            eventDateFormattedInput.value = formattedEventDate;
+            
+            // Get price
+            const priceEl = document.getElementById('total-price-display');
+            const price = priceEl ? priceEl.textContent : '₹99,999';
+            
+            // Add price hidden field to ensure it's sent correctly
+            let priceInput = document.createElement('input');
+            priceInput.type = 'hidden';
+            priceInput.name = 'price';
+            priceInput.value = price;
+            form.appendChild(priceInput);
+            
+            // Template parameters object
+            const templateParams = {
+                name: document.getElementById('name').value,
+                email: document.getElementById('email').value, // Customer's email for receipt
+                to_email: document.getElementById('email').value, // Explicitly set recipient for customer email
+                owner_email: 'info@rkwedding.com', // Owner's email for notification
+                phone: fullPhone,
+                booking_date: formattedBookingDate,
+                event_date: formattedEventDate,
+                raw_date: eventDate,
+                venue: document.getElementById('venue').value,
+                message: document.getElementById('message').value || 'No additional information provided',
+                package_type: packageDisplayName,
+                tier: tierDisplayName,
+                package_display: tierDisplayName + ' ' + packageDisplayName + ' Package', // Combined display value
+                price: price,
+                booking_reference: bookingReference,
+                package_features: featuresHtml // Add package features to template params
+            };
+            
+            // Show loading state
+            const submitBtn = form.querySelector('button[type="submit"]');
+            const originalBtnText = submitBtn.innerHTML;
+            submitBtn.disabled = true;
+            submitBtn.innerHTML = '<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Sending...';
+            
+            // Hide any previous error messages
+            const errorMessage = document.getElementById('form-error');
+            if (errorMessage) {
+                errorMessage.classList.add('d-none');
+            }
+            
+            console.log("Sending email with EmailJS...");
+            console.log("EmailJS available:", typeof emailjs !== 'undefined');
+            console.log("Template params:", templateParams);
+            
+            // First send email to the customer using EmailJS directly
+            emailjs.sendForm(
+                'default_service', // service ID 
+                'template_jgxu22s', // customer template ID
+                form, // pass the entire form element directly
+                'omzmKt1hNjC65t4R3' // public key
+            )
+            .then(function(response) {
+                console.log("CUSTOMER EMAIL SENT SUCCESSFULLY!", response);
+                // Then send email to the business owner
+                // Create a temporary form to send owner notification
+                const ownerForm = document.createElement('form');
+                
+                // Copy all fields from the original form
+                Array.from(form.elements).forEach(element => {
+                    if (element.name) {
+                        const input = document.createElement('input');
+                        input.type = 'hidden';
+                        input.name = element.name;
+                        input.value = element.value;
+                        ownerForm.appendChild(input);
+                    }
+                });
+                
+                // Add the form to the document temporarily (EmailJS requires it to be in the DOM)
+                ownerForm.style.display = 'none';
+                document.body.appendChild(ownerForm);
+                
+                return emailjs.sendForm(
+                    'default_service', // service ID
+                    'template_7l6pmvy', // owner template ID
+                    ownerForm, // use the temporary form for owner notification
+                    'omzmKt1hNjC65t4R3' // public key
+                );
+            })
+            .then(function(response) {
+                console.log("OWNER EMAIL SENT SUCCESSFULLY!", response);
+                
+                // Remove the temporary owner form from the DOM
+                const tempForm = document.querySelector('form[style="display: none;"]');
+                if (tempForm) {
+                    document.body.removeChild(tempForm);
+                }
+                
+                // If both emails sent successfully, redirect to confirmation page
+                window.location.href = 'confirmation.html';
+            })
+            .catch(function(error) {
+                // Handle errors
+                console.error('EmailJS error:', error);
+                
+                // Show error message
+                if (errorMessage) {
+                    errorMessage.textContent = 'There was a problem submitting your booking. Please try again or contact us directly.';
+                    errorMessage.classList.remove('d-none');
+                }
+                
+                // Reset button
+                submitBtn.disabled = false;
+                submitBtn.innerHTML = originalBtnText;
+            });
+            
+            return false;
+        }
+        
+        document.addEventListener('DOMContentLoaded', function() {
+            
+            // Set min date to today for event date picker
+            const eventDateInput = document.getElementById('event_date');
+            if (eventDateInput) {
+                const today = new Date();
+                const dd = String(today.getDate()).padStart(2, '0');
+                const mm = String(today.getMonth() + 1).padStart(2, '0');
+                const yyyy = today.getFullYear();
+                const todayString = yyyy + '-' + mm + '-' + dd;
+                
+                eventDateInput.setAttribute('min', todayString);
+            }
+            
+            // Toggle mobile menu functionality
+            window.toggleCheckbox = function(checkbox) {
+                document.body.classList.toggle('menu-open', checkbox.checked);
+            }
+        });
+    </script>
+</body>
+</html>
